@@ -1,12 +1,6 @@
 spring:
-  application:
-    name: front-service
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  healthcheck:
-    enabled: true
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
 server:
-  port: 8282
-
+  port: 8761
